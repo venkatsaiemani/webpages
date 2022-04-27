@@ -74,13 +74,51 @@ p{
 
 }
 .footer{
-    height:120;
-    width:100%;
-    text-align: center;
-    padding-top: 20px;
+    padding:40px 0;
+    background-color:black;
+    height: 100px; 
 }
-.footer{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
+ .footer .social {
+     text-align: center;
+     padding-bottom: 25px;
+     color:#fff;
+ }
+ .footer .social a  {
+     font-size: 30px;
+     color: #fff;
+     width:40px;
+     height:40px;
+     line-height: 38px;
+     text-align: center;
+     margin: 0 8px;
+     opacity:0.75;
+ }
+ .footer .social a:hover {
+     opacity:0.9;
+ }
+ .footer ul {
+     margin-top: 0;
+     padding: 0;
+     list-style: none;
+     font-size:18px;
+     margin-bottom: 0;
+     text-align: center;
+ }
+ .footer ul a {
+     color:#fff;
+     text-decoration: none;
+     opacity: 0.8;
+ }
+ .footer ul li {
+     display: inline-block;
+     padding: 0 15px;
+ }
+ .footer ul li a:hover {
+     opacity: 1;
+ }
+ .footer .copyright {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 18px;
+   color: #fff;;
+ }
