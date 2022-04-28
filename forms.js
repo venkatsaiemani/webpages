@@ -70,7 +70,7 @@ function validateForm() {
     if((nameErr && emailErr && mobileErr && secondpassword && firstpassword) == true) {
       
        alert("succesfully sign up");
-        window.location.replace("index.html"); 
+        window.location.replace("profile.html"); 
     
     }else {
         alert("Recheck the values");
