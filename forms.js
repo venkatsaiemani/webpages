@@ -29,7 +29,7 @@ function validateForm() {
         printError("emailErr", "Please enter your email address");
     } else {
       
-        var regex = /^\S+@\S+\.\S+$/;
+        var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if(regex.test(email) === false) {
             printError("emailErr", "Please enter a valid email address");
         } else{
@@ -37,7 +37,6 @@ function validateForm() {
             emailErr = true;
         }
     }
-    
 
     if(mobile == "") {
         printError("mobileErr", "Please enter your mobile number");

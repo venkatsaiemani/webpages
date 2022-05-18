@@ -1,17 +1,28 @@
 <html>
     <head>
         <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-     body{
-       background-color:#3390ff;
-       color: white;
-     }
+          *{
+              margin: 0;
+              padding:0;
+          }
+          html{
+            scroll-behavior: smooth;
+          }
      a{
        color: white;
      }
+     .con{
+          padding-left: 2.5cm;
+          padding-right: 2.5cm;
+     }
       .containner{
-          padding-inline-start:5cm;
-          padding-inline-end: 5cm;
+          padding-left: 40px;
+          padding-right: 40px;
+          background-color:#3390ff;
       }
       .arrow {
          border: solid black;
@@ -20,22 +31,20 @@
          padding: 3px;
       }
 
-      .right {
-         transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }  
-    .banner1{
-        padding-inline-start:3cm;
-          padding-inline-end: 3cm;
+      .imgpics{
+         box-shadow: 0 0 20px #3390ff;
+    }
+     .imgpics:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.874);
     }
     .navbarind{
-    width:85%;
-    height: 120px;
+    width:100%;
+    height: 115px;
     margin: auto;
-    padding: 44px 22px 32px 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #3390ff;
    }
    .navbarind ul li{
     list-style:none;
@@ -64,14 +73,16 @@
     p{
        font-family:Times New Roman;
        font-size:25px;
+       color: white;
     }
-    h2{
+    h3{
       font-size: 25px;
       color: white;
       text-align: center;
-      text-decoration: underline;
+      border:3px solid white;
+      padding:10px 0px 10px 0px;
     }
-  .containner ul{
+  .containner ul {
      font-size: 25px;
    }
     .navigator p{
@@ -79,80 +90,93 @@
       background-size: 32px;
       background-position: 0 5px;
       line-height: 1.5625;
-      padding: 10px 0px 4px 30px;
+      padding: 10px 0px 8px 30px;
       padding-top: 0px;
       padding-bottom: 6px;
       margin-left: 1em;
+      color: white;
+    }
+    h4{
+      font-size: 25px;
+      color: white;
+    }
+    .containner ol li{
+      color: white;
+    }
+  .containner ul li{
+    color: white;
+  }
+  .navigator a:hover{
+           text-decoration: none;
     }
         </style>
+        
     </head>
-    <body>
-        <div class="navbarind" style="background-color:paleblue;width:auto; height:1cm; background-image:url(/);">
-            <a href="index.html"><img src ="/NUTRI-TOPIA-logos_white.png" alt="" width="155px" height="155px" ></a>
-            <ul >
-             <li><a href="babaihtmlfile.html">BMI Calculator</a></li>
-              <li><a href="about.html">about us</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-          </div><br>
-          <img src="/underweightbanner.jpeg" width="100%">
-          <div class="banner1">
-          
-          </div><br><br>
-          <div>
-              
-          </div>
-          
+      <div class="navbarind">
+        <a href="index.html"><img src ="/NUTRI-TOPIA-logos_white.png" alt="" width="155px" height="155px" ></a>
+        <ul>
+         <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <body>
+      <img  src="/underweightbanner.jpeg" width="100%">
+      <section class="con">
         <div class="containner">
-            <center><h1><u>In This page You Can Find Following Information</u>:</h1><br><br></center>
+            <br><br><center><h1 style="color: white;"><u>In This page You Can Find Following Information</u>:</h1><br><br></center>
             <div class="navigator">
             <p><a href="#What does underweight mean?">What does underweight mean?</a></p><br>
             <p><a href="#causes of underweight?">causes of underweight?</a></p><br>
             <p><a href="#What are the health risks of being underweight?">What are the health risks of being underweight?</a></p><br>
             <p><a href="#How can I gain weight safely?">How can I gain weight safely?</a></p><br>
-            </div>
-            <center><img src="/underweightpics/facts.jpeg" style="background-color: white; border: 1px white;align-items: center;"></center>
+            <p><a href="#Diet plan">Diet plan</a></p><br>  
+            <p><a href="#Exercises to gain weight">Exercises to gain weight</a></p><br>  
+            <p><a href="#Recommended Products">Recommended Products</a></p><br>
+          </div>
+            <center><img class="imgpics" src="/underweightpics/facts.jpeg" style="background-color: white; border: 1px white;align-items: center;"></center>
             <a name="What does underweight mean?"></a>
-        <br><h2>What does underweight mean?</h2><br>
+        <br><h3>What does underweight mean?</h3><br>
         <p> Being underweight means you are below the healthy weight range — the weight that research has shown you need to be if your body is to work properly.<br>
            Being outside this range, whether overweight or underweight, can seriously affect your health.
           </p>
           <br>
           <br>
           <a name="causes of underweight?"></a>
-            <h2>Causes of Underweight :</h2>
+            <h3>Causes of Underweight :</h3>
               <br><br>
              <ul type ="disc">
-                <li><p><u>Family history</u>: Some people have a naturally low BMI due to physical characteristics that run in their family.</p></li><br> <center><img src="/underweightpics/familytree.jpeg" height="50%px" width="50%"></center><br>
-               <li><p><u>A high metabolism</u>: If a person has a high metabolism, they may not gain much weight even when eating high-energy foods.</p></li><br><center><img src="/underweightpics/metabolism.jpeg" height="50%px" width="50%"></center><br>
-                <li><p><u>Frequent physical activity</u>: Athletes or people who engage in high levels of physical activity, such as runners, may burn significant amounts of calories that result in low body weight.</p></li><br><center><img src="/underweightpics/physicalactivity.jpeg" height="50%px" width="50%"></center><br>
-                <li><p><u>Physical illness or chronic disease</u>: Some disease types can cause regular nausea, vomiting, and diarrhea, making it difficult to gain weight.</p></li><br><center><img src="/underweightpics/chronicdieases.jpeg" height="50%px" width="50%"></center><br>
+                <li><p><u>Family history</u>: Some people have a naturally low BMI due to physical characteristics that run in their family.</p></li><br> <center><img class="imgpics" src="/underweightpics/familytree.jpeg" height="50%" width="50%"></center><br>
+               <li><p><u>A high metabolism</u>: If a person has a high metabolism, they may not gain much weight even when eating high-energy foods.</p></li><br><center><img class="imgpics" src="/underweightpics/metabolism.jpeg" height="50%" width="50%"></center><br>
+                <li><p><u>Frequent physical activity</u>: Athletes or people who engage in high levels of physical activity, such as runners, may burn significant amounts of calories that result in low body weight.</p></li><br><center><img class="imgpics" src="/underweightpics/physicalactivity.jpeg" height="50%" width="50%"></center><br>
+                <li><p><u>Physical illness or chronic disease</u>: Some disease types can cause regular nausea, vomiting, and diarrhea, making it difficult to gain weight.</p></li><br><center><img class="imgpics" src="/underweightpics/chronicdieases.jpeg" height="50%" width="50%"></center><br>
              </ul><br>
            <a name="What are the health risks of being underweight?"></a>   
-          <h2> What are the health risks of being underweight?</h2><br>
+          <h3> What are the health risks of being underweight?</h3><br>
           <p>
             Studies have shown that underweight people suffer from nutritional deficiencies, which increases their risk of developing several impairing diseases significantly. </p>
-            <br><br><h2>Health risks associated with being underweight include:</h2> <br>
+            <br><br><h3>Health risks associated with being underweight include:</h3> <br>
               <ul >
                   <li><p><u>Gradual bone loss</u>:Low BMI has been strongly associated with reduced bone mineral density. 
-                A study published in the International Journal of Clinical Practice stated that being underweight increases women’s risk of developing osteoporosis, a bone disease characterised by excessive bone loss making the bones brittle and prone to fractures.</p></li><center><img src="/underweightpics/boneloss.jpeg" height="50%px" width="50%"></center><br>
+                A study published in the International Journal of Clinical Practice stated that being underweight increases women’s risk of developing osteoporosis, a bone disease characterised by excessive bone loss making the bones brittle and prone to fractures.</p></li><br><center><img class="imgpics" src="/underweightpics/boneloss.jpeg" height="50%px" width="50%"></center><br>
                 <li><p><u>Reduced immune function</u>:A review study published in the Journal of Nutrition stated that protein deficiency in people with low BMI results in the decreased production of white blood cells and antibodies in response to a viral infection. 
-                It has also been established that in the absence of enough protein, fat, and other nutrients in the body, the immune system of underweight people works inefficiently. </p></li><br></li><center><img src="/underweightpics/reducedimmune.jpeg" height="75%px" width="50%"></center><br>
+                It has also been established that in the absence of enough protein, fat, and other nutrients in the body, the immune system of underweight people works inefficiently. </p></li><br></li><center><img class="imgpics" src="/underweightpics/reducedimmune.jpeg" height="75%" width="50%"></center><br>
                 <li><p><u>Heart diseases</u>: Minerals such as potassium, sodium, and calcium are required to maintain a steady heartbeat. The imbalance of these essential minerals in malnourished underweight people results in improper heart rhythms (arrhythmias).
                  A study published in the journal Medicine in 2017 found that out of <u>491,773</u> participants, underweight participants were at<u>19.7%</u> higher risk of developing cardiovascular diseases than the normal-weight participants. 
-                 Studies also reveal that underweight people are prone to develop heart diseases such as mitral valve prolapse (bulging of the valves of the heart), arrhythmias, and even heart failure. </p></li><br></li><center><img src="/underweightpics/heartdieases.jpeg" height="50%px" width="50%"></center><br>
-                <li><p><u>Skin and hair problems</u>: Due to the lack of enough nutrients in the body, underweight people tend to experience thinning and drying of the skin along with excessive hair fall.  </p></li><br></li><center><img src="/underweightpics/hairloss.jpeg" height="50%px" width="50%"></center><br>
-                <li><p><u>Irregular menstrual cycle</u>: Underweight women may experience irregular, delayed or absence of periods. Persistent irregularity or absence of menses can also result in infertility.</p></li><br>  </li><center><img src="/underweightpics/irregularmensualcycle.jpeg" height="50%px" width="50%"></center><br>
+                 Studies also reveal that underweight people are prone to develop heart diseases such as mitral valve prolapse (bulging of the valves of the heart), arrhythmias, and even heart failure. </p></li><br></li><center><img class="imgpics" src="/underweightpics/heartdieases.jpeg" height="50%" width="50%"></center><br>
+                <li><p><u>Skin and hair problems</u>: Due to the lack of enough nutrients in the body, underweight people tend to experience thinning and drying of the skin along with excessive hair fall.  </p></li><br></li><center><img class="imgpics" src="/underweightpics/hairloss.jpeg" height="50%" width="50%"></center><br>
+                <li><p><u>Irregular menstrual cycle</u>: Underweight women may experience irregular, delayed or absence of periods. Persistent irregularity or absence of menses can also result in infertility.</p></li><br>  </li><center><img class="imgpics" src="/underweightpics/irregularmensualcycle.jpeg" height="50%" width="50%"></center><br>
                <li><p><u>Preterm labour</u>: A research published in the journal BlOG in 2016 found that underweight pregnant women are at increased risk of delivering the baby before 37 weeks of gestation. 
-                A premature baby can have long-lasting intellectual as well as developmental disabilities.</p></li><br><center><img src="/underweightpics/prelabour.jpeg" height="50%px" width="50%"></center><br>
+                A premature baby can have long-lasting intellectual as well as developmental disabilities.</p></li><br><center><img class="imgpics" src="/underweightpics/prelabour.jpeg" height="50%" width="50%"></center><br>
             </ul><br>
             <a name="How can I gain weight safely?"></a>   
-            <h2> How can I gain weight safely?</h2><br>
+            <h3> How can I gain weight safely?</h3><br>
              <p>If you are underweight, it is important to eat a variety of foods that give you the nutrition you need. You should make sure you eat enough energy to gain weight, protein to repair your body and build your muscles, and vitamins and minerals to make you healthy.</p><br>
             <p>The aim is to gain weight gradually by eating healthy foods. Even if you are underweight, try to avoid foods with a lot of added sugar, fat and salt, like cakes, takeaway foods and sugary drinks.</p><br>
             <p>You can put on weight by eating small meals frequently throughout the day. Try to snack on healthy, high energy foods like cheese, nuts, milk-based smoothies and dried fruit.</p><br>
-            <h2>Further tips for gaining weight safely include:</h2>
-           <div><ul><br><br><br>
+            <h3>Further tips for gaining weight safely include:</h3><br>
+            <img class="imgpics"  src="/underweightpics/tips.png" align="right" height="400px" width="550px" >  
+           <div><ul><br>
               <li><p>using full cream milk</p></li><br>
               <li><p>using healthy fats like olive oil or avocado</p></li><br>
               <li><p>sprinkling some grated cheese on cooked food</p></li><br>
@@ -161,9 +185,103 @@
               <li><p>replacing tea or coffee with milky drinks</p></li><br>
               <li><p>doing some exercise to increase your appetite</p></li><br>
             </ul></div>
-            <div style="padding-left: 0.5cm;">
-            <img style="transform:translate(120%,-105%);" src="/underweightpics/tips.png" height="450px" width="550px" >  
+            
+            <a name="Diet plan"></a>   
+            <br><h3 >Diet plan</h3><br>
+            <p>To deal with underweight, maintaining a proper nutritious diet is important. 
+              We create a weight gain meal plan for underweight, easily followed by both males and females.
+              We try to add food with high-calorie foods for underweight adults. This diet meal plan is used to provide the right nutrients, vitamins, and minerals required by the body. 
+              You can easily buy food items listed in the underweight diet meal plan in your local markets.</p><br>
+              <center><img class="imgpics" src="/underweightpics/deitplan.jpg" width="85%" height="60%"></center><br><br>
+              <h3>Quick health tips for a person suffering from underweight must include this in your diet plan:</h3><br>
+            <ul>
+              <li>Heavy food items that are more in calories.</li><br>
+               <li>Frequent consumption of food items which are rich in nutrients, it could be snacks, shakes or juices, or proper meals.</li><br>
+                <li>Adding extra ingredients that are high in calories to regular diet, for example, including eggs and bananas in morning breakfast, etc., can help in increasing the weight.</li><br>
+                <li>Consume protein supplements along with adequate amount of vegetables and fruits.</li><br>
+                <li>Eating calorie dense food and maintaining a balanced diet will help in gaining the weight.</li><br>
+                <li>However, the diet shouldn’t be started drastically and instead, should be implemented gradually so that the body is accustomed with it.</li><br>
+            </ul>
+            <center><img class="imgpics" src="/underweightpics/dietplanweekly.png"></center><br><br>
+            <h3>Do's And Dont's While Following Diet Plan for Under weight:</h3><br>
+            <h4>Do's:</h4><br>
+             <ul>
+               <li><p>Eat more often</p></li><br>
+               <li><p>Drink Milk</p></li><br>
+               <li><p>Try Weight gainer shakes</p></li><br>
+               <li><p>Use Bigger Plates</p></li><br>
+                <li><p>Add cream to your coffee</p></li><br>
+                <li><p>Take Creatine</p><br>
+                <li><p>Get Quality Sleep</p></li><br>
+                <li><p>Eat your protein first and vegetables last</p></li><br>
+             </ul>
+          <h4>Don'ts</h4><br>
+          <ul>
+              <li><p>Drink water before meals</p></li><br>
+              <li><p>Smoke</p></li><br>
+          </ul>  
+          <a name="Exercises to gain weight"></a>   
+            <br><h3>Exercises to gain weight</h3><br>
+            <h4>Pushups:</h4><br>
+            <p>Pushups are simple and help build muscle in your arms and shoulders</p><br>
+            <p>To do a pushup:</p><br>
+            <ol start="1">
+              <li><p>Lie face down on the ground.</p></li><br>
+               <li><p>your hands on the ground, palms flat, with your arms out at your sides and your hands shoulder-width apart.</p></li><br>
+                <li><p>push your body up until your arms are fully extended. Keep your back and legs straight so that your body makes a straight line.</p></li><br>
+                <li><p>lower yourself back down until your nose nearly touches the floor.</p></li><br>
+               <li><p>Repeat as many times as you feel comfortable.</p></li><br>
+            </ol>
+            <br><br><center><img class="imgpics"src="/underweightpics/pushup1.gif" width="50%" height="50%"></center><br>
+            <h4>Pullups:</h4><br>
+            <p>You’ll need some kind of pullup bar or sturdy cylindrical object to do pullups. 
+            Otherwise, this exercise is a simple way to build arm and shoulder muscles.</p><br>
+            <p>To do a pullups:</p><br>
+            <ol start="1">
+              <li><p>Grip the pullup bar with both hands. Your palms should face away from you. Keep your arms shoulder-width apart.</p></li><br>
+               <li><p>Pull yourself up enough to hang off the bar so that your feet aren’t touching the ground and your arms are straight.</p></li><br>
+                <li><p>Continue to pull yourself up until your chin is above the bar.</p></li><br>
+                <li><p>Slowly lower yourself down so that your arms are straight again.</p></li><br>
+               <li><p>Repeat as many times as you want.</p></li><br>
+            </ol>
+            <br><br><center><img class="imgpics"src="/underweightpics/pullups.gif" width="50%" height="75%"></center><br>
+            <h4>Squats:</h4><br>
+            <p>This exercise helps build muscle in your butt and legs, especially your quadriceps femoris (quads) muscles.</p><br>
+            <p>To do a Squats:</p><br>
+            <ol start="1">
+              <li><p>Stand up straight so that your feet are hips-width distance apart.</p></li><br>
+               <li><p>Put your hands on your hips and flex your abdominal muscles.</p></li><br>
+                <li><p>Begin lowering yourself down using only your legs, as if you’re about to sit down, and get into a seated position until your thighs are parallel to the ground. Keep your upper body as still as possible.</p></li><br>
+                <li><p>Raise yourself back up to your original position.</p></li><br>
+               <li><p>Repeat as many times as you want.</p></li><br>
+            </ol>
+            <br><br><center><img class="imgpics"src="/underweightpics/Squats.gif" width="50%" height="75%"></center><br>
+            <a name="Recommended Products"></a>   
+            <br><h3>Recommended Products</h3><br>
             </div>
-          </div>
+            <section class="footer" style ="width:100%;">
+              <div class="social">
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-snapchat"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-facebook"></i></a>
+              </div>
+          <ul class="list">
+              <li> 
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="about.html">About us</a>
+              </li>
+              <li>
+                  <a href="#">privacy policy</a>
+              </li>
+          </ul>
+          <p class="copyright">
+              Nutri-Topia @ 2022
+          </p>
+          </section>
+      </section>
+  
         </body>
 </html>

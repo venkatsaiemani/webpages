@@ -187,8 +187,7 @@ input[type="button"]:hover {
 </style>
 </head>
 <body>
-    <br><br><br>
-   <h2>Thanks For Loging In</h2><br>
+    <br>
    <h3>Please Check Your BMI To Proceed</h3><br><br><br>
     <img class="imgbody" src="/bmibody.jpeg" alt="" width="475px" height="450px">
     <div class="container">
@@ -212,10 +211,10 @@ input[type="button"]:hover {
        </center>
       </div>
     <div>
-      <center><img style="padding-top: 1cm;" src="/bmisteps.jpeg" alt="" width="85%"></center>
+      <center><img style="padding-top: 0.5cm;" src="/bmisteps.jpeg" alt="" width="85%"></center>
     </div>
     <script type="text/javascript">
-        var bmi;
+        var bmi=20.0;
 function calculate(){
    
     var result = document.getElementById("result");
@@ -227,14 +226,13 @@ function calculate(){
   
     bmi = (weight / Math.pow( (height/100), 2 )).toFixed(1);
     result.textContent = bmi;
-
-  
-    if(bmi < 18.5){
+    
+      if(bmi < 18.5){
         category = "Underweight 😢";
         result.style.color = "#ffc44d";
     }
   
-    else if( bmi >= 18.5 && bmi <= 24.9 ){
+    else if( bmi >= 18.5  && bmi <= 24.9 ){
         category = "Normal Weight 😍";
         result.style.color = "#0be881";
     }
@@ -248,23 +246,27 @@ function calculate(){
         category = "Obese 😱";
         result.style.color = "#ff5e57";
     }
+
     document.getElementById("category").textContent = category;
 }
 
 function redirect(){
-    if(bmi < 18.5){
+    if(bmi == 20.0){
+        window.location.replace("normal.html"); 
+    }
+    else if(bmi < 18.5){
         window.location.replace("underweight.html"); 
     }
-    else if( bmi >= 18.5 && bmi <= 24.9 ){
-        window.location.replace("#"); 
+    else if( bmi >= 18.5  && bmi <= 24.9 ){
+        window.location.replace("normal.html"); 
     }
   
     else if( bmi >= 25 && bmi <= 29.9 ){
-        window.location.replace("#"); 
+        window.location.replace("overweight.html"); 
     }
   
     else{
-        window.location.replace("#"); 
+        window.location.replace("obes.html"); 
     }
 }
     </script>
