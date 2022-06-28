@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.top-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.ctfassets.net/ra4mbqa7hpmd/6OAAcCUFbuYfVzlLM9g9Sv/00e7dbbf42ec049b1ff93e690897e5b4/best-pulse-oximeter.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+  padding-top: 20px;
+}
+.navbar{
+  width: 85%;
+  height: 15%;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button{
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+.content{
+  color: #fbfcfd;
+  position : absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+}
+h1{
+   font-size: 80px;
+   margin: 10px 0 30px;
+   line-height: 80px;
+}
+.side-bar{
+  width: 100px;
+  height: 100vh;
+  background: linear-gradient(#fbfcfd, #4700D8);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu{
+  background-color:  #251D3A;
+  display: block;
+  width: 25px;
+  margin: 40px auto 0;
+  cursor: pointer;
+
+}
+.links{
+  padding-top: 10px;
+  color: white;
+}
+.bubbles img{
+  width: 50px;
+  animation: bubbles 7s linear infinite;
+}
+.bubbles{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+@keyframes bubbles {
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+
+    opacity: 1;
+  }
+  70%{
+
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(1){
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(2){
+  animation-delay: 3s;
+  width: 10px;
+}
+.bubbles img:nth-child(3){
+  animation-delay: 4.5s;
+  width: 15px;
+}
+.bubbles img:nth-child(4){
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(5){
+  animation-delay: 6s;
+  width: 25px;
+}
+.bubbles img:nth-child(6){
+  animation-delay: 7s;
+  width: 20px;
+}
+.sp{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.sp1{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 15px;
+  font-size: 1.5rem;
+}
+.middle-container{
+  padding-top: 30px;
+}
+#pricing{
+  padding: 100px;
+}
+.section-heading{
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.section-par{
+  text-align: center;
+}
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-col{
+  padding: 3% 2%;
+}
+.skill-row{
+  width:50%;
+  margin:100px auto 100px auto;
+  line-height: 2;
+  text-align: left;
+}
+.sp-img1{
+  float: left;
+  margin-right: 30px;
+}
+.sp-img2{
+  float: right;
+  margin-left: 30px;
+}
+.sp-img3{
+  float: left;
+  margin-right: 30px;
+}
+.mid-container{
+  padding-top: 60px;
+}
+.mid{
+  text-align: center;
+}
+.dietexerimg{
+
+  padding-top: 100px;
+}

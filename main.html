@@ -1,0 +1,80 @@
+<html>
+      <head>
+<style>
+h2{
+    font-size: 40px;
+    color: #fff;
+}
+    .cen{
+        padding-top: 6cm;
+        padding-bottom: 5cm;
+    }
+    .logo{
+        width: 120px;
+        cursor: pointer; 
+    }
+
+        .body{
+            background-image: url("giphy.gif");
+         background-size: cover;
+         background-attachment: fixed;
+        }
+
+ul{
+    list-style-type: none;
+    float: right;
+}
+ul li{
+    display: inline-block;
+}
+ul li  a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.sel{
+    color:black;
+    font-size: 15px;
+}
+</style><div class="main">
+  <img src="logo.jpeg" class="logo">
+  <ul>
+ <li><a href="profile.php">HOME</a></li>
+ <li><a href="about.html">ABOUT US</a></li>
+ <li><a href="contactfile.html">CONTACT US</a></li>
+</ul></div>
+          <form>
+            <center class="cen"><h2>Blood pressure:</h2> <select id="bp" name="bp" class="sel">
+                <option value="-"> -------Select your blood pressure-------</option>
+                  <option value="lbp"> Low blood pressure</option>
+                  <option value="nbp"> Normal blood pressure</option>
+                  <option value="hbp"> High blood pressure</option>
+              </select>
+              <input type="button" value="Submit" onclick="redirectto()" class="button"></center>
+          </form>
+          <script>
+              function redirectto(){
+                  var result=document.getElementById("bp").value;
+                  if(result=="lbp"){
+                      window.location.replace("lowbp.html");
+                  }
+                  else if(result=="nbp"){
+                      window.location.replace("normalbp.html");
+                  }
+                  else if(result=="hbp"){
+                      window.location.replace("highbp.html");
+
+                  }
+              }
+      
+          </script>
+      </head>
+      <body class="body">
+          
+      </body></html>
+    

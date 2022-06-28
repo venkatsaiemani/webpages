@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://greenvillejournal.com/wp-content/uploads/2020/05/web-interior-cover-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 90px;
+}
+.textbox p{
+    font-size: 40px;
+}
+.what{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.what h1{
+    font-size: 60px;
+}
+.what p{
+    font-size: 30px;
+}
+.causes{
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.causes h1{
+    color: white;
+    font-size: 60px;
+
+    text-align: center;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+.column2 {
+    color: white;
+    font-size: 30px;
+    float: right;
+    width: 50%;
+    height: 500px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.factors{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.factors h1{
+    font-size: 60px;
+    text-align: center;
+}
+.factors p{
+    font-size: 30px;
+    text-align: left;
+}
+.factors h3{
+    font-size: 30px;
+    text-align: center;
+
+}
+.measures{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.measures h1{
+    font-size: 60px;
+    text-align: center;
+}
+.measures h4{
+    font-size: 30px;
+    text-align: center;
+}
+.measures p{
+    font-size: 30px;
+    text-align: left;
+}
+.disorders{
+
+    background-color: black;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.disorders h1{
+    
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.disorders p{
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}

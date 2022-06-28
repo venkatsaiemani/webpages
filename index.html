@@ -1,5 +1,6 @@
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
@@ -22,7 +23,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       float: left;
      }
     .why .left p{
-      background: url(/circlearrow.png) no-repeat ;
+      background: url(circlearrow.png) no-repeat ;
       background-size: 32px;
       background-position: -1px 9px;
       line-height: 1.5625;
@@ -38,7 +39,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
      float: right;
     }
     .why .right p{
-      background: url(/circlearrow.png) no-repeat ;
+      background: url(circlearrow.png) no-repeat ;
       background-size: 32px;
       background-position: -1px 9px;
       line-height: 1.5625;
@@ -56,30 +57,139 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
      color: rgb(44, 141, 63);
      font-family: BlackMango, Verdana, Arial, sans-serif;
    }
- 
+   h3{
+     text-align: center;
+   }
+.container_article{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:1200px;
+  flex-wrap: wrap;
+  height: auto;
+}
+.container_article .card{
+  position: relative;
+  width:300px;
+  padding: 20px;
+  margin:20px;
+  background-color: #79DAE8;
+}
+.container_article .card .icon{
+  margin-bottom:10px;
+}
+.container_article .card .content_article{
+  position:relative;
+  height:215px;
+  overflow:hidden;
+}
+.container_article .card.active .content_article{
+ height: auto;
+}
+.container_article .card .content_article::before{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#79DAE8);
+}
+.container_article .card.active .content_article::before{
+     display: none;
+
+}
+.container_article .card .content_article h3{
+  font-size:1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.container_article .card .content_article p{
+       font-weight: 300;
+}
+.container_article .card .more{
+  position:relative;
+  padding:10px 15px;
+  background:black;
+  margin-top: 15px;
+  display: inline-block;
+  cursor:pointer;
+  text-transform: uppercase;
+  color:white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.container_article .card.active .more{
+  background: red ;
+  color:white;
+}
+.container_article .card .more::before{
+  content: 'Read more';
+}
+.container_article .card.active .more::before{
+  content: 'Read Less';
+}
+.articles{
+  padding-left: 5cm;
+  height: auto;
+}
+.info{
+     height: 175px;;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: #3BACB6;
+ }
+ .getstarted button{
+    width: 200PX;
+    padding: 15PX 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color:black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.getstarted button:hover{
+  background-color: #009688;
+}
   </style>
 </head> 
   <body>
-      <div class="banner">
+      <div class="banner" style=" background-image:url(nutritionimg.jpg);">
         <div class="navbarin">
-          <img src ="NUTRI-TOPIA-logos_black.png" alt="" width="155px" height="155px" >
+      <img src ="NUTRI-TOPIA-logos_black.png" alt="" width="155px" height="155px" >
           <ul>
             <li><a href="about.html">about us</a></li>
             <li><a href="contactfile.html">contact</a></li>
+            <li><a href="login.php">Log In</a></li>
           </ul>
         </div>
       <div class="content">
-     <h1 style="font-size: 80px;font-family: BlackMango, Verdana, Arial, sans-serif">CHOOSE A HEALTHY LIFE</h1>
-       <div>
-        <a href="login.html"><button  type="button"><span></span>LOG IN</button></a>
-        <a href="singup.html"><button onclick= "Function()" type="button"><span></span>SIGN UP</button></a>
+  
+     <h3 style="
+
+     font-family: Mistrully, Verdana, Arial, sans-serif;
+     font-size: 60px;
+     font-style: normal;
+     font-variant-caps: normal;
+     font-variant-east-asian: normal;
+     font-variant-ligatures: normal;
+     font-variant-numeric: normal;
+     font-weight: 400;">Eat Well. Live Better</h3>
+       <div class="getstarted">
+        <a href="signup.php"><button>Get Started</button></a>
         </div>
       </div>
       </div>
      <div class="info"><br><br>
-       <h1 style="font-family: BlackMango, Verdana, Arial, sans-serif">Welcome To Our Website</h1><br>
-       <h3><p>Where nutritional know-how is distilled to educate, empower and inspire you to take charge of your plate and wellbeing.<br> With the right tools and support you too
-         can live a healthful life that works for you.</p></h3>
+       <h1>Welcome To Our Website</h1><br>
+       <h3><p>Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. 
+        Rather, it's about feeling great, having more energy, improving your health, and boosting your mood.</p></h3>
      </div><br><br>
      <div class="why">
       <center><h2>Why is it important to have a good Nutrition?</h2></center><br><br>
@@ -98,9 +208,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     For example, tomatoes contain vitamin C, which helps build collagen, in turn making your skin look firmer and slow premature aging. 
     Berries are full of antioxidants and vitamins and eating them promotes cell regeneration for new skin.
   </p>
-       </div>
+     </div>
        <div class="right">
-       <br><center><img src="/whynutrition.jpg" height="320px" width="520px"></center><br><br>
+       <br><center><img src="whynutrition.jpg" height="320px" width="520px"></center><br><br>
         <h4>Maintains Your Immune System</h4>
         <p>Our immune system is our defense against disease, but poor nutrition is the most common cause of immune deficiencies worldwide. 
           Maintaining your immune system requires an intake of proper vitamins and minerals.
@@ -108,11 +218,47 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
        </p>
        </div>
     </div>
-    <div class="articles">
+  <div class="articles">
     <center><h2>Featured Articles</h2></center>
+    <div class="container_article">
+      <div class="card">
+        <div class="icon">
+          <img src="time.jpeg" height="200px" width="300px">
+        </div>
+        <div class="content_article">
+          <h3>Meal Frequency and Timing Are Associated with Changes in Body Mass Index in Adventist Health Study on timeings</h3>
+          <p>Scientific evidence for the optimal number, timing, and size of meals is lacking. The authors of this study investigated the relation between meal frequency and timing and changes in body mass index (BMI). 
+            Their results suggest that in relatively healthy adults, eating less frequently, no snacking, consuming breakfast, and eating the largest meal in the morning may be effective methods for preventing long-term weight gain.
+             Eating breakfast and lunch 5-6 h apart and making the overnight fast last 18-19 h may be a useful practical strategy to beeing healthy.</p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="blood.jpeg" height="200px" width="300px">
+        </div>
+        <div class="content_article">
+          <h3>Blood type diets lack supporting evidence: a systematic review on blood </h3>
+          <p> A systematic search was performed to answer the following question: In humans grouped according to blood type, does adherence to a specific diet improve health or decrease risk of disease compared with nonadherence to the diet? The Cochrane Library,
+            MEDLINE, and Embase were systematically searched by using sensitive search strategies. The authors concluded that no evidence to validate the purported health benefits of blood type diets.To validate these claims, 
+            studies are required that compare the health outcomes between participants adhering to a particular blood type diet  and participants continuing.</p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="keto.jpeg" height="200px" width="300px">
+        </div>
+        <div class="content_article">
+          <h3>The Ketogenic Diet: Evidence for Optimism but High-Quality Research Needed</h3>
+          <p>The author of the article says that "Based on available evidence, a well-formulated ketogenic diet does not appear to have major safety concerns for the general public and can be considered a first-line approach for obesity and diabetes.
+            High-quality clinical trials of ketogenic diets will be needed to assess important questions about their long-term effects and full potential in clinical medicine" </p>
+        </div>
+        <a class="more"></a>
+      </div>
     </div>
-    <br>
-    <section class="footer">
+  </div>
+  <section class="footer">
       <div class="social">
          <a href="#"><i class="fab fa-instagram"></i></a>
          <a href="#"><i class="fab fa-snapchat"></i></a>
@@ -128,5 +274,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       Nutri-Topia @ 2022
   </p>
   </section>
+  <script>
+    let more = document.querySelectorAll('.more');
+       for(let i = 0; i<more.length; i++){
+         more[i].addEventListener('click',function(){
+           more[i].parentNode.classList.toggle('active')
+         })
+       }
+     </script>
   </body>
 </html>
